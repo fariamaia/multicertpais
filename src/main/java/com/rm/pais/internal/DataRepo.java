@@ -55,7 +55,7 @@ public class DataRepo {
 		
 		
 		//Create Scheduler to invoke the data refresh periodically
-		executorService.scheduleAtFixedRate(this::refresh, 0, 46, TimeUnit.SECONDS);
+		executorService.scheduleAtFixedRate(this::refresh, 0, 60, TimeUnit.SECONDS);
 	}
 	
 	
