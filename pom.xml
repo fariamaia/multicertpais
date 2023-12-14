@@ -10,8 +10,8 @@
 	<packaging>war</packaging>
 
 	<properties>
-		<maven.compiler.source>17</maven.compiler.source>
-		<maven.compiler.target>17</maven.compiler.target>
+		<maven.compiler.source>21</maven.compiler.source>
+		<maven.compiler.target>21</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -46,29 +46,11 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>3.3.2</version>
 			</plugin>
-			<!-- Execute 'mvn liberty:dev' to run the application.  -->
+			<!-- Execute 'mvn liberty:run' to run the application.  -->
 			<plugin>
 				<groupId>io.openliberty.tools</groupId>
 				<artifactId>liberty-maven-plugin</artifactId>
 				<version>3.10</version>
-				<configuration>
-					<assemblyArtifact>
-						<groupId>io.openliberty</groupId>
-						<artifactId>openliberty-runtime</artifactId>
-						<version>23.0.0.12</version> <!-- Use the Liberty version
-						corresponding to your Liberty Maven Plugin -->
-						<type>zip</type>
-					</assemblyArtifact>
-				</configuration>
-				<executions>
-					<execution>
-						<id>package-server</id>
-						<phase>package</phase>
-						<goals>
-							<goal>package</goal>
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 
 		</plugins>
