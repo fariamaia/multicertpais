@@ -20,7 +20,7 @@ public class PaisToCountryAdapter {
 
 		try {
 			return new Country(adaptLanguagues(pais.getLanguages()), pais.getPopulation(),
-					adaptCurrencies(pais.getCurrencies()), capital, pais.getCca3(), location);
+					adaptCurrencies(pais.getCurrencies()), capital, "", location);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
