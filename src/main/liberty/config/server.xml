@@ -31,7 +31,7 @@
 
 	<!-- To access this server from a remote client add a host attribute to the
 	following element, e.g. host="*" -->
-	<httpEndpoint id="defaultHttpEndpoint"
+	<httpEndpoint id="defaultHttpEndpoint" host="*"
 		httpPort="-1"
 		httpsPort="9443" />
 

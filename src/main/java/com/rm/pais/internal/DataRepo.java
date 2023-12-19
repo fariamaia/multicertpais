@@ -63,7 +63,7 @@ public class DataRepo {
 		clientNinja = ClientBuilder.newClient();
 
 		// Create Scheduler to invoke the data refresh periodically
-		executorService.scheduleAtFixedRate(this::refresh, 0, 30, TimeUnit.SECONDS);
+		executorService.scheduleAtFixedRate(this::refresh, 0, 60, TimeUnit.SECONDS);
 	}
 
 	private void refresh() {
